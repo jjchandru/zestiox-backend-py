@@ -115,7 +115,7 @@ Before you begin, make sure you have the following installed on your computer:
 
 ## REST APIs to Develop
 
-Based on the features described in `app-features.md`, you are expected to implement the following REST API endpoints. Each endpoint should return JSON data as described below. You may use hardcoded data initially, and later connect to the database.
+You are expected to implement the following REST API endpoints. Each endpoint should return JSON data as described below. You may use hardcoded data initially, and later connect to the database.
 
 ### 1. Login
 - **Endpoint:** `POST /authenticate`
@@ -209,7 +209,7 @@ Based on the features described in `app-features.md`, you are expected to implem
 
 ## Next Steps
 
-- Read the `app-features.md` file for the full list of features to implement.
+- Review the REST API requirements above for the features to implement.
 - Use the provided folder structure and files as a starting point for your development.
 - If you have any issues, check the terminal output for error messages and ensure all steps above were followed.
 
