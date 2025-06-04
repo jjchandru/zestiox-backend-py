@@ -37,20 +37,17 @@ Before anyone starts working, your team must identify a **coordinator** who will
    - Go to: https://github.com/jjchandru/zestiox-backend-py
    - Click the **Fork** button (top right) to create a copy under their own GitHub account.
 
-2. **Create Feature Branches**
-   - In the forked repository, the coordinator creates the following branches:
+2. **Create Feature Branches in GitHub Web**
+   - In the forked repository on GitHub, click the branch dropdown (usually says "main" or "master") near the top left.
+   - In the dropdown, type the name of the new branch (for example, `login`).
+   - Click **Create branch: login from 'main'**.
+   - Repeat this process to create the following branches:
      - `login`
      - `register`
      - `menu`
      - `cart`
      - `orders`
      - `profile`
-   - This can be done on the GitHub website or by cloning the fork and using Git commands:
-     ```powershell
-     git checkout -b login
-     git push origin login
-     # Repeat for each branch
-     ```
 
 3. **Add Team Members as Collaborators**
    - The coordinator collects the GitHub account email IDs of all team members.
