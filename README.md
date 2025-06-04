@@ -100,7 +100,7 @@ Each team member should follow these steps after the coordinator has completed t
 5. **Install Project Dependencies**
    - In the terminal, run:
      ```powershell
-     pip install -r requirements.txt
+     pip install Flask Flask-SQLAlchemy Flask-Migrate PyMySQL marshmallow
      ```
    - This will install all required Python packages for the project.
 
