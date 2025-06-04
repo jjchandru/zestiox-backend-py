@@ -28,15 +28,53 @@ Before you begin, make sure you have the following installed on your computer:
 
 ## Setting Up the Project
 
-1. **Clone the Project Repository**
-   - Open a terminal (Command Prompt or PowerShell on Windows) in a convenient folder where you want to have this project. This can typically be the folder where the angular project is present.
-   - Run the following command to clone the repository:
+### 1. Coordinator Setup (One Time Per Team)
+
+Before anyone starts working, your team must identify a **coordinator** who will perform the following steps:
+
+1. **Fork the Repository**
+   - The coordinator logs in to their GitHub account.
+   - Go to: https://github.com/jjchandru/zestiox-backend-py
+   - Click the **Fork** button (top right) to create a copy under their own GitHub account.
+
+2. **Create Feature Branches**
+   - In the forked repository, the coordinator creates the following branches:
+     - `login`
+     - `register`
+     - `menu`
+     - `cart`
+     - `orders`
+     - `profile`
+   - This can be done on the GitHub website or by cloning the fork and using Git commands:
      ```powershell
-     git clone https://github.com/jjchandru/zestiox-backend-py.git
+     git checkout -b login
+     git push origin login
+     # Repeat for each branch
      ```
-   - Change directory to the project folder:
+
+3. **Add Team Members as Collaborators**
+   - The coordinator collects the GitHub account email IDs of all team members.
+   - In the forked repository, go to **Settings > Collaborators**.
+   - Add each team member as a collaborator so they have access to the repository.
+
+4. **Share the Forked Repository URL**
+   - The coordinator shares the URL of the forked repository with all team members.
+
+---
+
+### 2. Team Member Setup
+
+Each team member should follow these steps after the coordinator has completed the above:
+
+1. **Clone the Forked Repository**
+   - Open a terminal (Command Prompt or PowerShell on Windows) in `zestiox` folder (where your Angular project is present).
+   - Run the following command to clone the forked repository (replace `<your-fork-url>` with the URL shared by your coordinator):
      ```powershell
-     cd zestiox-backend-py
+     git clone <your-fork-url>
+     ```
+   - The above step will clone the backend python code in `zestiox-backend-py` folder, which must be available under `zestiox`.
+     ```powershell
+     cd zestiox
      ```
 
 2. **Open the Project in VS Code**
